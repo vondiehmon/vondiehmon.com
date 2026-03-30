@@ -83,17 +83,22 @@
     }
 
     .tag {
-      display: inline-block;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(99, 210, 255, 0.1);
-      border: 1px solid rgba(99, 210, 255, 0.25);
-      color: var(--accent);
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(99, 210, 255, 0.1);
+  border: 1px solid rgba(99, 210, 255, 0.25);
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-decoration: none;   /* 👈 add this */
+}
+
+.tag:hover {
+  background: rgba(99, 210, 255, 0.2);
+}
 
     h1 {
       font-size: clamp(2.2rem, 5vw, 4.3rem);
@@ -231,7 +236,7 @@
   <main class="wrap">
     <section class="hero">
       <img src="vondiehmon-logo.png" alt="Vondiehmon Logo" class="hero-logo" />
-      <div class="tag">vondiehmon.com</div>
+      <a href="aboutme.html" class="tag">Who is Vondiehmon?</a>
       <h1>Hi, I'm <span class="highlight">Vondiehmon</span>.</h1>
       <p class="lead">
         Welcome to my corner of the internet — a place where tech tinkering, movie obsession, gaming energy,
